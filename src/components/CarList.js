@@ -16,10 +16,7 @@ function CarList() {
         <p>
           {car.name} - ${car.cost}
         </p>
-        <button
-          className="button is-danger"
-          onClick={() => handleCarDelete(car)}
-        >
+        <button className="button is-link" onClick={() => handleCarDelete(car)}>
           Delete
         </button>
       </div>

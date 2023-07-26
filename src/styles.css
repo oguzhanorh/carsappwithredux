@@ -84,3 +84,23 @@ hr {
   margin-bottom: 0px;
   margin-right: 10px;
 }
+.button.is-link {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.button.is-link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #f44336;
+  transition: all 0.3s;
+}
+
+.button.is-link:hover:before {
+  left: 0;
+}
